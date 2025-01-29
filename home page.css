@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2a2a72;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #f1c40f;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    margin: 20px 0;
+}
+
+.feature-item h3 {
+    font-size: 2em;
+    color: #2a2a72;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a72;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
