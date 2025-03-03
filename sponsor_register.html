@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Registration | DreamPatron</title>
+ 
+</head>
+<style>
+    /* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(image.jpg);
+    background-size: contain;  
+      background-position: center;   
+
+    display: flex;
+
+
+   
+     
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;
+    color: white;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Szezmziz-ztzrzaznsparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border for glass effect */
+    overflow-x: auto; /* For responsive table scrolling */
+}
+
+/* Heading styling */
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table header styling */
+th {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 15px;
+    text-align: left;
+    color: white;
+}
+
+/* Table row styling */
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    color: white;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background: rgba(255, 255, 255, 0.05); /* Slight highlight on hover */
+}
+
+/* Link styling (for Marks Card) */
+a {
+    color: #4CAF50; /* Green color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049; /* Darker green on hover */
+}
+
+/* Button styling */
+button {
+    background: rgba(76, 175, 80, 0.8); /* Semi-transparent green */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(69, 160, 73, 0.9); /* Darker green on hover */
+}
+
+/* Responsive table for smaller screens */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <h2>Sponsor Registration</h2>
+        <form action="sponsor_register.php" method="POST">
+            <label for="name">Full Name / Organization Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="interests">Areas of Support:</label>
+            <textarea id="interests" name="interests" required></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

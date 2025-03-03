@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | DreamPatron</title>
+    
+</head><style>
+    /* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(streg2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0); /* Semi-transparent white */
+    backdrop-filter: blur(100px); /* Blur effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5); /* Shadow for depth */
+    border: 5px solid rgb(255, 255, 255); /* Border for glass effect */
+}
+
+/* Heading styling */
+.container h2 {
+    color: rgba(0, 0, 0, 0.8); /* Changed text color to black */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form label styling */
+.container label {
+    color: rgb(0, 0, 0); /* Changed text color to black */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form input styling */
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.89); /* Semi-transparent white */
+    color: rgba(0, 0, 0, 0.8); /* Changed text color to black */
+}
+
+/* Button styling */
+.container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 255, 255); /* Semi-transparent white */
+    color: rgb(240, 17, 17);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container button:hover {
+    background: rgba(202, 7, 7, 0.945); /* Slightly more opaque on hover */
+}
+
+/* File input styling */
+.container input[type="file"] {
+    padding: 5px;
+}
+
+/* Placeholder text color */
+.container input::placeholder {
+    color: rgba(0, 0, 0, 0.8); /* Changed text color to black */
+}
+</style>
+<body>
+    <div class="container">
+        <h2>Student Registration</h2>
+        <form action="student_register.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" required>
+
+            <label for="mother_name">Mother's Name:</label>
+            <input type="text" id="mother_name" name="mother_name" required>
+
+            <label for="percentage">Last Year Percentage:</label>
+            <input type="number" id="percentage" name="percentage" step="0.01" required>
+
+            <label for="marks_card">Last Year Marks Card (Upload):</label>
+            <input type="file" id="marks_card" name="marks_card" required>
+
+            <label for="income">Family Annual Income:</label>
+            <input type="number" id="income" name="income" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
